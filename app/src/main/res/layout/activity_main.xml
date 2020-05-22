@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e9faf6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#dfebe8"
+        android:orientation="vertical">
+        <TextView android:id="@+id/music_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
+            android:text="本地音乐"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="#e9faf6" />
+        <ListView android:id="@+id/music_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/music_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginVertical="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#e9faf6">
+        <ImageView android:id="@+id/music_thumb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/gnote" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView android:id="@+id/music_name"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:textSize="14sp"
+                android:textColor="#0b9900"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"/>
+            <TextView android:id="@+id/artist_name"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:textSize="12sp"
+                android:textColor="#0b9900"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/btn_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/previous" />
+        <ImageView android:id="@+id/btn_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/play"/>
+        <ImageView android:id="@+id/btn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/next" />
+        <ImageView android:id="@+id/btn_func"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/repeat_all" />
+    </LinearLayout>
+</LinearLayout>
